@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Survey Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <style>
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="wrapper">
+            <img src="11.png" class="logo">
+            <ul class="menu" style="width: 250px; border: 1px solid gray; border-radius: 6px;">
+                <li style="font-size: 15px;">By:</li><br />
+                <li style="font-size: 15px;">P Sheetal - ENG17CS0146</li>
+                <li style="font-size: 15px;">R S Vignesh - ENG17CS0167</li>
+                <li style="font-size: 15px;">Rahul Davis - ENG17CS0168</li>
+                <li style="font-size: 15px;">Rahul Joy - ENG17CS0169</li>
+            </ul>
+            <div style="margin-left:auto; margin-right: auto; width: 500px;">
+                <h1 style="text-align:center">
+                    <strong>Survey Form</strong>
+                </h1>
+                <br />
+                <h3 style="text-align:center">
+                    <strong>Created using HTML, CSS, PHP and MySQL</strong>
+                </h3>
+            </div>
+            <br /><br />
+        </div>
+        <div class="a">
+            <p><i><strong>The purpose of this survey is to collect information from the employees around the world. This
+                        survey should take less than 2 minutes to complete.</strong></i></p>
+        </div>
+    </header>
+    <section>
+        <div class="container contact-form">
+            <div class="contact-image">
+                <img src="https://image.ibb.co/kUagtU/rocket_contact.png" alt="rocket_contact" />
+            </div>
+            <form action="connect.php" method="post" id="form1">
+                <h3>Please tell us a little about yourself</h3>
+                <div class="row">
+                    <div class="col-md-6" style="width: 100%;">
+                        <p><b>Gender:</b>
+                            <br />
+                            <input type="RADIO" name="gender" value="m" id="Male"> Male &nbsp;
+                            <input type="RADIO" name="gender" value="f" id="Female"> Female
+                        </p><br />
+                        <p><b>Department:</b>
+                            <br />
+                            <input type="text" name="dept" id="dept">
+                        </p>
+                        <br />
+                        <p>
+                        <b>Nationality:</b>
+                            <br />
+                            <input type="RADIO" name="nationality" value="India"> India &nbsp;
+                            <input type="RADIO" name="nationality" value="U.S.A"> U.S.A &nbsp;
+                            <input type="RADIO" name="nationality" value="UK"> UK &nbsp;
+                            <input type="RADIO" name="nationality" value="Canada"> Canada
+                        </p>
+                        <br />
+                        <p><b>Experience:</b>
+                            <br /><br />
+                            <textarea placeholder="Your experience at the company*" type="text" name="exp"
+                                id="exp" class="form-control"
+                                style="width: 400px; height: 110px; margin-left: 15px;"></textarea>
+                        </p>
+                        <br />
+                        <p class="colon">
+                        <b>The work is very stimulating.</b></br><span class="new">
+                                <input type="RADIO" name="sim" value="Strongly Agree"> Strongly Agree
+                                <input type="RADIO" name="sim" value="Agree"> Agree
+                                <input type="RADIO" name="sim" value="Neither Agree nor Disagree"> Neither Agree nor
+                                Disagree
+                                <input type="RADIO" name="sim" value="Disagree"> Disagree
+                                <input type="RADIO" name="sim" value="Strongly Disagree"> Strongly Disagree</span>
+
+                        </p><br />
+                        <p class="colon">
+                        <b>I have a lot of freedom at work.</b><br><span class="new">
+                                <input type="RADIO" name="simp" value="Strongly Agree"> Strongly Agree
+                                <input type="RADIO" name="simp" value="Agree"> Agree
+                                <input type="RADIO" name="simp" value="Neither Agree nor Disagree"> Neither Agree nor
+                                Disagree
+                                <input type="RADIO" name="simp" value="Disagree"> Disagree
+                                <input type="RADIO" name="simp" value="Strongly Disagree"> Strongly Disagree</span>
+
+                        </p><br />
+                        <p class="colon">
+                        <b>My supervisor is very demanding of high quality.</b><br><span class="new">
+                                <input type="RADIO" name="simpy" value="Strongly Agree"> Strongly Agree
+                                <input type="RADIO" name="simpy" value="Agree"> Agree
+                                <input type="RADIO" name="simpy" value="Neither Agree nor Disagree"> Neither Agree nor
+                                Disagree
+                                <input type="RADIO" name="simpy" value="Disagree"> Disagree
+                                <input type="RADIO" name="simpy" value="Strongly Disagree"> Strongly Disagree</span>
+
+                        </p><br />
+                        <p class="colon">
+                        <b>The work environment is conducive to creative thinking.</b><br><span class="new">
+                                <input type="RADIO" name="simply" value="Strongly Agree"> Strongly Agree
+                                <input type="RADIO" name="simply" value="Agree"> Agree
+                                <input type="RADIO" name="simply" value="Neither Agree nor Disagree"> Neither Agree nor
+                                Disagree
+                                <input type="RADIO" name="simply" value="Disagree"> Disagree
+                                <input type="RADIO" name="simply" value="Strongly Disagree"> Strongly Disagree</span>
+
+                        </p><br />
+                        <p>
+                        <b>Do you have any addition thoughts on the topic of the survey?</b></br>
+                            </br>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <textarea name="txtMsg1" value="txtMsg1" class="form-control"
+                                    placeholder="Your Message *" style="width: 100%; height: 110px;"></textarea>
+                            </div>
+                        </div>
+                        </p>
+                        </br>
+                        </br>
+                        </br>
+                        <p>
+                            </br>
+                            </br>
+                            </br>
+                            </br>
+                        If you would like to have a copy of the final summary results sent to you, please type
+                            your e-mail address below:<br><br /> <b>E-mail address:</b>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <textarea name="txtMsg2" value="txtMsg2" class="form-control" placeholder="Your Email *"
+                                    style="width: 100%; height: 50px;"></textarea>
+                            </div>
+                        </div>
+                        </p>
+                        </br>
+                        </br>
+                        </br>
+                        </br>
+                        <p>
+                        <b>Thank you for taking the survey. If you would like to add any further comments, please enter
+                            them below.
+                            below.</b><br />
+                        </p>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <textarea name="txtMsg3" value="txtMsg3" class="form-control"
+                                    placeholder="Your Message *" style="width: 100%; height: 110px;"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br /><br />
+                <div class="a">
+                    <button type="submit" form="form1" value="submit" class="btn btn-primary">
+                        Submit
+                    </button>
+                    <button type="reset" class="btn btn-primary">Clear</button>
+                </div>
+        </div>
+        </form>
+        </div>
+    </section>
+</body>
